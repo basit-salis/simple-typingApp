@@ -1,18 +1,153 @@
 <!DOCTYPE html>
+<html lang="en">
 
-<html>
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-  <title>my-first-website</title>
-  <LINK href="styles.css" rel="stylesheet" type="text/css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/customCss.css">
+    <link rel="stylesheet" href="assets/font/css/font-awesome.css">
+    <title>seacon type</title>
 </head>
 
 <body>
+    <main class="main container">
+        <div class="row main-row">
 
-<img src="https://octodex.github.com/images/daftpunktocat-thomas.gif" id="octocat" alt="octocat-gif" />
+            <div class="col-6 mainHead d-flex justify-content-center align-items-center">
+                <h2>typingQuest</h2>
+            </div>
 
-<!-- Change this code here by copy and pasting your template on line 15 -->
-<p>Welcome to your first GitHub Pages website!</p>
 
+            <div class="col-6 timer-container d-flex justify-content-between py-1">
+                <div class="timing-container d-flex flex-column justify-content-between h-100">
+                    <button class="btn btn-primary border-0 timer-botton" id="reset">start over</button>
+
+                    <div id="clock" class="d-flex justify-content-center align-items-center">
+                        <span class="timer">00:00:00</span>
+                    </div>
+                </div>
+                <div class="result d-flex flex-column" style="width: 20%;">
+                    <span>error count: 0</span>
+                    <span>point count: 0</span>
+                </div>
+            </div>
+            <div class="col-12 typeHere rounded px-4 my-2">
+                <div class="row">
+                    <div id="origin-text" class="col-12 d-flex justify-content-center align-items-center">
+
+                        <p>Lorem ipsum dolor.</p>
+                    </div>
+
+                    <div class="col-12 text-wrapper d-flex justify-content-center align-items-center p-0">
+                        <textarea name="textarea" id="test-area" placeholder="the clock starts on keypress"></textarea>
+                    </div>
+                </div>
+
+            </div>
+
+
+
+        </div>
+
+
+
+
+        <div class="keyboard-wrapper d-flex justify-content-center align-items-center shadow pt-3 mt-2">
+            <!-- button isometric -->
+            <div class='iso'>
+                <ul class="key-row1">
+                    <li><span><a href='#'>`</a></li>
+                    <li><span><a href='#'>1</a></li>
+                    <li><span><a href='#'>2</a></li>
+                    <li><span><a href='#'>3</a></li>
+                    <li><span><a href='#'>4</a></li>
+                    <li><span><a href='#'>5</a></li>
+                    <li><span><a href='#'>6</a></li>
+                    <li><span><a href='#'>7</a></li>
+                    <li><span><a href='#'>8</a></li>
+                    <li><span><a href='#'>9</a></li>
+                    <li><span><a href='#'>0</a></li>
+                    <li><span><a href='#'>-</a></li>
+                    <li><span><a href='#'>=</a></li>
+                    <li><span><a href='#'>&larr;</a></li>
+
+
+
+                </ul>
+
+                <ul class="key-row2">
+                    <li><span><a href='#'>tab</a></li>
+                    <li><span><a href='#'>Q</a></li>
+                    <li><span><a href='#'>W</a></li>
+                    <li><span><a href='#'>E</a></li>
+                    <li><span><a href='#'>R</a></li>
+                    <li><span><a href='#'>T</a></li>
+                    <li><span><a href='#'>Y</a></li>
+                    <li><span><a href='#'>U</a></li>
+                    <li><span><a href='#'>I</a></li>
+                    <li><span><a href='#'>O</a></li>
+                    <li><span><a href='#'>P</a></li>
+                    <li><span><a href='#'>[</a></li>
+                    <li><span><a href='#'>]</a></li>
+                    <li><span><a href='#'>#</a></li>
+                </ul>
+
+                <ul class="key-row3">
+                    <li><span><a href='#'>caps lock</a></li>
+                    <li><span><a href='#'>A</a></li>
+                    <li><span><a href='#'>S</a></li>
+                    <li><span><a href='#'>D</a></li>
+                    <li><span><a href='#'>F</a></li>
+                    <li><span><a href='#'>G</a></li>
+                    <li><span><a href='#'>H</a></li>
+                    <li><span><a href='#'>J</a></li>
+                    <li><span><a href='#'>K</a></li>
+                    <li><span><a href='#'>L</a></li>
+                    <li><span><a href='#'>;</a></li>
+                    <li><span><a href='#'>'</a></li>
+                    <li><span><a href='#'>enter</a></li>
+
+
+
+                </ul>
+
+                <ul class="key-row4">
+                    <li><span><a href='#'>&uarr;</a></li>
+                    <li><span><a href='#'>Z</a></li>
+                    <li><span><a href='#'>X</a></li>
+                    <li><span><a href='#'>C</a></li>
+                    <li><span><a href='#'>V</a></li>
+                    <li><span><a href='#'>B</a></li>
+                    <li><span><a href='#'>N</a></li>
+                    <li><span><a href='#'>M</a></li>
+                    <li><span><a href='#'>,</a></li>
+                    <li><span><a href='#'>.</a></li>
+                    <li><span><a href='#'>/</a></li>
+                    <li><span><a href='#'>&uarr;</a></li>
+                </ul>
+
+                <ul class="key-row5">
+                    <li><span><a href='#'>ctrl</a></li>
+                    <li><span><a href='#'>fn</a></li>
+                    <li><span><a href='#'>win</a></li>
+                    <li><span><a href='#'>alt</a></li>
+                    <li><span><a href='#'></a></li>
+                    <li><span><a href='#'>alt</a></li>
+                    <li><span><a href='#'>\</a></li>
+                    <li><span><a href='#'>&larr;</a></li>
+                    <li><span><a href='#'>&uarr;</a></li>
+                    <li><span><a href='#'>&rarr;</a></li>
+
+                </ul>
+            </div>
+        </div>
+
+
+    </main>
+
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/customJs.js"></script>
 </body>
+
 </html>

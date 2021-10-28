@@ -1,0 +1,243 @@
+:root {
+    --primaryColor: rgb(155, 3, 155);
+    ;
+    --primaryColorTransparent: rgba(105, 90, 205, 0.64);
+    --secondaryColor: rgba(27, 26, 26, 0.524);
+    --backgroundColor: rgb(226, 226, 226);
+    --mainWhite: #fff;
+    --mainBlack: #222;
+    --success: #0ae657b4;
+    --continue: #e6a00a92;
+    --error: rgba(253, 26, 26, 0.422);
+    --textColor: #5e5e5e;
+    --mainSpacing: 0.5rem;
+    --mainTransition: all 0.3s linear;
+    --shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: url(../img/curved0.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    /* background-color: var(--backgroundColor); */
+    color: #fff;
+}
+
+.main {
+    height: 100vh;
+
+}
+
+.main-row {
+}
+
+.mainHead {
+    height: 120px;
+    background-color: var(--primaryColorTransparent);
+    border-bottom-left-radius: 5px;
+}
+
+.timer-container {
+    height: 120px;
+    background-color: var(--primaryColorTransparent);
+    border-bottom-right-radius: 5px;
+
+
+}
+
+.timing-container {
+    border-radius: 5px;
+}
+
+.timer-botton {
+    width: 100%;
+    height: 45%;
+
+}
+
+#clock {
+    width: 100%;
+    height: 45%;
+    font-size: 19px;
+    border-radius: 5px;
+    background-color: var(--secondaryColor);
+
+}
+
+.result span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 50%;
+    background-color: var(--secondaryColor);
+    font-size: 12px;
+    border-radius: 5px;
+    margin: 2px;
+}
+
+#origin-text {
+    width: 90%;
+    height: 60px;
+    padding: 10px 10px;
+    margin: 10px 0;
+    background-color: var(--secondaryColor);
+}
+
+#test-area {
+    padding: 10px 20px;
+    color: var(--mainWhite);
+}
+
+#test-area::placeholder {
+    padding: 1% 0 0 40%;
+    color: rgba(253, 253, 253, 0.796);
+}
+
+#origin-text span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    height: 100%;
+    /* border: 1px solid red; */
+    box-shadow: 1px 1px 5px 0.1px grey;
+}
+
+#origin-text p {
+    font-size: 20px;
+}
+
+.text-wrapper {
+    position: relative;
+    height: 110px;
+    overflow: hidden;
+
+}
+
+.text-wrapper textarea {
+    min-width: 100%;
+    min-height: 100px;
+    background-color: rgba(27, 26, 26, 0.844);
+    border: none;
+
+    font-size: 15px;
+}
+
+
+
+/* isomertric css */
+.keyboard-wrapper {
+    background-color: var(--primaryColorTransparent);
+    width: 100%;
+    height: 300px;
+}
+
+.iso {
+    height: 100%;
+    /* background: red; */
+}
+
+.iso ul {
+    width: 100%;
+    position: relative;
+    margin: 3px 0 0 0;
+    display: flex;
+}
+
+.iso ul li {
+    list-style-type: none;
+    margin: 0 3px;
+}
+
+.iso ul li a {
+    position: relative;
+    display: block;
+    height: 50px;
+    width: 60px;
+    border-radius: 10%;
+    background: #fff;
+    text-align: center;
+    text-decoration: none;
+    transition: 0.5s;
+    box-shadow: 3px 3px 20px rgba(0, 0, 1, 0.623);
+}
+
+.iso ul li a .fa,
+.iso ul li a {
+    font-size: 20px;
+    color: #2626;
+    line-height: 50px;
+    transition: 0.5s;
+
+}
+
+.key-row1 li:last-child a {
+    width: 75px;
+    border-radius: 5px;
+
+}
+
+.key-row2 li:nth-child(1) a {
+    width: 75px;
+    border-radius: 5px;
+}
+
+.key-row3 li:nth-child(1) a,
+.key-row3 li:last-child a {
+    width: 100px;
+    border-radius: 5px;
+}
+
+.key-row4 li:nth-child(1) a,
+.key-row4 li:last-child a {
+    width: 134px;
+    border-radius: 5px;
+}
+
+.key-row5 li:nth-child(4) a,
+.key-row5 li:nth-child(6) a {
+    width: 75px;
+    border-radius: 5px;
+}
+
+.key-row5 li:nth-child(5) a {
+    width: 310px;
+    border-radius: 5px;
+}
+
+
+
+.iso ul li a:hover {
+    transform: perspective(1000px) translate(1px, 2px);
+    color: red;
+    /* box-shadow: -50px 20px 10px rgba(0,0,0.5); */
+}
+
+.iso ul li:nth-child(1) a:hover i {
+    color: indigo;
+}
+
+.iso ul li:nth-child(2) a:hover i {
+    color: rgb(94, 35, 35);
+}
+
+.iso ul li:nth-child(3) a:hover i {
+    color: blue;
+}
+
+.iso ul li:nth-child(4) a:hover i {
+    color: red;
+}
+
+/* iso end */
